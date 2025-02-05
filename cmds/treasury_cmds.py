@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import datetime
-import holidays
+# import holidays
 
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
@@ -39,15 +39,15 @@ def prev_bday(date,force_prev=False):
 
 from datetime import timedelta
 
-def next_business_day(DATE):
+# def next_business_day(DATE):
     
-    ONE_DAY = timedelta(days=1)
-    HOLIDAYS_US = holidays.US()
+#     ONE_DAY = timedelta(days=1)
+#     # HOLIDAYS_US = holidays.US()
 
-    next_day = DATE
-    while next_day.weekday() in holidays.WEEKEND or next_day in HOLIDAYS_US:
-        next_day += ONE_DAY
-    return next_day
+#     next_day = DATE
+#     while next_day.weekday() in holidays.WEEKEND or next_day in HOLIDAYS_US:
+#         next_day += ONE_DAY
+#     return next_day
 
 
 
